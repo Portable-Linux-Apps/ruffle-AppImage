@@ -6,7 +6,6 @@ export ARCH=$(uname -m)
 REPO="https://api.github.com/repos/ruffle-rs/ruffle/releases"
 APPIMAGETOOL="https://github.com/pkgforge-dev/appimagetool-uruntime/releases/download/continuous/appimagetool-$ARCH.AppImage"
 UPINFO="gh-releases-zsync|$(echo $GITHUB_REPOSITORY | tr '/' '|')|latest|*$ARCH.AppImage.zsync"
-export URUNTIME_PRELOAD=1 # really needed here
 
 # ruffle uses amd64 instead of x86_64
 tarball_url=$(wget "$REPO" -O - | sed 's/[()",{} ]/\n/g' \
@@ -27,5 +26,3 @@ mkdir ./AppDir && (
 wget "$APPIMAGETOOL" -O ./appimagetool
 chmod +x ./appimagetool
 ./appimagetool -n -u "$UPINFO" ./AppDir
-
-
