@@ -1,4 +1,8 @@
-# ruffle-AppImage
+# ruffle-AppImage 🐧
+
+[![GitHub Downloads](https://img.shields.io/github/downloads/Portable-Linux-Apps/ruffle-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/Portable-Linux-Apps/ruffle-AppImage/releases/latest)
+[![CI Build Status](https://github.com//Portable-Linux-Apps/ruffle-AppImage/actions/workflows/blank.yml/badge.svg)](https://github.com/Portable-Linux-Apps/ruffle-AppImage/releases/latest)
+
 
 This repo takes the [official ruffle binaries](https://github.com/ruffle-rs/ruffle/releases) and turns them into an AppImage. 
 
